@@ -4,6 +4,7 @@ import "./Home.css"
 import { useNavigate } from "react-router-dom";
 import getAuthentication from "../index";
 import { Button, Modal } from "react-bootstrap";
+import TodoItem from '../component/todoItem';
 
 function Home() {
     const navigate = useNavigate()
@@ -70,6 +71,12 @@ function Home() {
                     </Modal.Footer>
                 </Modal>
             </div>
+            <div className="todo-list">
+                {todos.map(value => {
+                    return <TodoItem todo={value}></TodoItem>
+                })}
+            </div>
+
         </div>
     } else {
         return (

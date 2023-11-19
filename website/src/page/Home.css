@@ -4,3 +4,10 @@
     left: 83%;
     bottom: 80px;
 }
+
+.todo-list {
+    margin-left: 50px;
+    display: flex;
+    flex-direction: row;
+
+}
