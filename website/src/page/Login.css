@@ -1,0 +1,59 @@
+.login-form {
+    width: 462px;
+    height: 538px;
+
+    background-color: #F3E8E8;
+    border: 13px solid #E9B6B6;
+
+    opacity: 50%;
+    border-radius: 2px;
+}
+
+.login-form {
+    margin: auto;
+    position: relative;
+    top: 250px;
+
+    text-align: center;
+}
+
+.login-form > input{
+    padding-left: 10px;
+}
+
+.login-form > p {
+    color: black;
+    position: relative;
+    top: 45%;
+}
+
+.click-here {
+    color: #CC5F5F !important;
+    cursor: pointer;
+}
+
+.email {
+    width: 324px;
+    height: 68px;
+
+    position: relative;
+    top: 30%;
+}
+
+.password {
+    width: 324px;
+    height: 68px;
+
+    position: relative;
+    top: 35%;
+}
+
+.login-button {
+    position: relative !important;
+    top: 40% !important;
+
+    background-color: #F5C8C8;
+    color: #D46D6D;
+
+    box-shadow: #D46D6D 3px -3px;
+}

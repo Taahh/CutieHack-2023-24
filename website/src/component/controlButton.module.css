@@ -1,0 +1,19 @@
+.controlButton {
+    background-color: #F3E8E8;
+    font-size: 32px;
+
+    color: #E9B6B6;
+    box-shadow: #DEB9B9 3px -3px;
+
+    margin-right: 20px;
+}
+
+.controlButton:hover {
+    background-color: #f3c9c9;
+    box-shadow: #ffb2b2 3px -3px;
+
+    color: #dc9999;
+
+    transition: all 0.4s ease;
+    transform: scale(1.1)
+}

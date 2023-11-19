@@ -1,0 +1,6 @@
+.control-buttons {
+    display: flex;
+    position: relative;
+    left: 83%;
+    bottom: 80px;
+}
