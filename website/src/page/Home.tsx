@@ -9,11 +9,19 @@ function Home() {
     const navigate = useNavigate()
     const [signedIn, setSignedIn] = useState(false)
     const [showCreateModal, setShowCreateModal] = useState(false)
+    const [todos, setTodos] = useState([])
     const deadline = React.createRef<HTMLInputElement>()
     useEffect(() => {
+        console.log(todos)
         getAuthentication().onAuthStateChanged(value => {
             if (value) {
-                setSignedIn(true)
+                fetch("http://127.0.0.1:8080/todos/list/" + value.uid).then(value1 => {
+                    value1.json().then(value1 => {
+                        setTodos(value1)
+                        setSignedIn(true)
+                    })
+                })
+
             }
         })
     }, [signedIn])
